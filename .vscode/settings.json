@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "*.ndjson": "jsonl",
-        "*.dbclient-js": "javascript",
-        "parson.h": "c",
-        "*.in": "cpp",
-        "md4c.h": "c"
-    }
-}

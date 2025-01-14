@@ -2,10 +2,9 @@
 
 :: Verify python virtual enviroment
 if exist ".venv" (
-    echo Ativando o ambiente virtual...
     call .venv\Scripts\activate.bat
 ) else (
-    echo Ambiente virtual não encontrado, criando ambiente...
+    echo Virtual enviroment not found, creating .venv...
     python -m venv .venv
     call .venv\Scripts\activate.bat
 )

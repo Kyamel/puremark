@@ -4,7 +4,7 @@ import subprocess
 import platform
 import os
 from pathlib import Path
-import parser as parser
+import c_parser as c_parser
 
 def check_cmake_installed() -> None:
     """Checks if CMake is installed on the system."""
@@ -151,7 +151,7 @@ def main() -> None:
         # Gerar os bindings Dart
         c_file = Path(cmake_file).parent / "src" / "bindings.h"
         print(f"Generating Dart bindings for:\n {c_file}")
-        dart_file = parser.generate_dart_bindings(c_file, bindings_out_dir, sharer_lib_out_dir)
+        dart_file = c_parser.generate_dart_bindings(c_file, bindings_out_dir, sharer_lib_out_dir)
         print(f"Bindings generated successfully. Dart file is located at:\n {dart_file}")
     except Exception as e:
         print(f"Erro: {e}")

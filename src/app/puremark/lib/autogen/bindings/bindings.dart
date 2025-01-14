@@ -9,6 +9,6 @@
 
         
 import 'dart:ffi';
-import 'package:ffi/ffi.dart' as adv; // For Pointer and Dynamic memory allocation.
+import 'package:ffi/ffi.dart' as adv;// For Pointer and Dynamic memory allocation.
 final dylib = DynamicLibrary.open('lib/autogen/native_libraries/windows/fmrender.dll');
 

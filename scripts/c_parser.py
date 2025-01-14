@@ -60,7 +60,8 @@ def generate_dart_bindings(c_file: Path,
                    "// For Pointer and Dynamic memory allocation.\n")
         shared_lib_out_dir_posix = Path(shared_lib_out_dir).as_posix()
         shared_lib_out_dir_final = shared_lib_out_dir_posix.split("src/app/puremark/")[1]
-        dart.write(f"final dylib = DynamicLibrary.open('{shared_lib_out_dir_final}/fmrender.dll');\n\n")
+        dart.write(f"final dylib = DynamicLibrary.open('{shared_lib_out_dir_final}"
+                   f"/fmrender.dll');\n\n")
 
         # Processar funções definidas no arquivo C
         for line in source:
@@ -86,11 +87,17 @@ def generate_dart_bindings(c_file: Path,
 
                 # Gerar typedefs e o binding da função
                 dart.write(f"// Typedef for {func_name}\n")
-                dart.write(f"typedef {func_name.capitalize()}Func = {c_to_dart_ffi_type(return_type)} Function({', '.join(ffi_args)});\n")
-                dart.write(f"typedef {func_name.capitalize()} = {c_to_dart_type(return_type)} Function({', '.join([a.split(' ')[0] for a in dart_args])});\n")
+                dart.write(f"typedef {func_name.capitalize()}"
+                           f"Func = {c_to_dart_ffi_type(return_type)}"
+                           f"Function({', '.join(ffi_args)});\n")
+
+                dart.write(f"typedef {func_name.capitalize()} = {c_to_dart_type(return_type)}"
+                           f"Function({', '.join([a.split(' ')[0] for a in dart_args])});\n")
 
                 dart.write(f"// Loads {func_name} function\n")
-                dart.write(f"final {func_name.capitalize()} {func_name} = dylib.lookupFunction<{func_name.capitalize()}Func, {func_name.capitalize()}>(\n")
+                dart.write(f"final {func_name.capitalize()} {func_name} = dylib.lookupFunction"
+                           f"<{func_name.capitalize()}Func, {func_name.capitalize()}>(\n")
+                
                 dart.write(f"  '{func_name}',\n")
                 dart.write(");\n\n")
 

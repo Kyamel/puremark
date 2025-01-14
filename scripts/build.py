@@ -88,10 +88,11 @@ def main() -> None:
 
     # Configurar o parser de argumentos
     argparser = argparse.ArgumentParser(description="Crossplatform Native Library Compiler.")
-    argparser.add_argument('platform', choices=['macos', 'android', 'windows', 'linux', 'ios', 'web',
-                                             'macos-release', 'android-release', 'windows-release',
-                                             'linux-release', 'ios-release', 'web-release'],
-                        help="Platform to build native shared library.")
+    argparser.add_argument('platform',
+                            choices=['macos', 'android', 'windows', 'linux', 'ios', 'web',
+                                        'macos-release', 'android-release', 'windows-release',
+                                        'linux-release', 'ios-release', 'web-release'],
+                            help="Platform to build native shared library.")
 
     # Analisar os argumentos
     args = argparser.parse_args()
@@ -99,45 +100,64 @@ def main() -> None:
 
     if args.platform == "windows":
         print("Compiling for Windows...")
-        sharer_lib_out_dir = WORKSPACE / "src" / "app" / "puremark" / "lib" / "autogen" / "native_libraries" / "windows"
+        sharer_lib_out_dir = WORKSPACE / "src" / "app" / "puremark" / "lib" / \
+        "autogen" / "native_libraries" / "windows"
+
     elif args.platform == "macos":
         print("Compiling for macOS...")
-        sharer_lib_out_dir = WORKSPACE / "src" / "app" / "puremark" / "lib" / "autogen" / "native_libraries" / "macos"
+        sharer_lib_out_dir = WORKSPACE / "src" / "app" / "puremark" / "lib" / \
+        "autogen" / "native_libraries" / "macos"
+
     elif args.platform == "linux":
         print("Compiling for Linux...")
-        sharer_lib_out_dir = WORKSPACE / "src" / "app" / "puremark" / "lib" / "autogen" / "native_libraries" / "linux"
+        sharer_lib_out_dir = WORKSPACE / "src" / "app" / "puremark" / "lib" / \
+        "autogen" / "native_libraries" / "linux"
+
     elif args.platform == "android":
         print("Compiling for Android...")
+
     elif args.platform == "ios":
         print("Compiling for iOS...")
         raise NotImplementedError("iOS platform not supported yet.")
+
     elif args.platform == "web":
         print("Compiling for Web...")
         raise NotImplementedError("Web platform not supported yet.")
+
     elif args.platform == "windows-release":
         print("Compiling for Windows Release...")
-        sharer_lib_out_dir = WORKSPACE / "src" / "app" / "puremark" / "build" "windows" / "Runner" / "Release"
+        sharer_lib_out_dir = WORKSPACE / "src" / "app" / "puremark" / \
+        "build" "windows" / "Runner" / "Release"
+
     elif args.platform == "macos-release":
         print("Compiling for macOS Release...")
-        sharer_lib_out_dir = WORKSPACE / "src" / "app" / "puremark" / "build" / "macos" / "Build" / "Products" / "Release"
+        sharer_lib_out_dir = WORKSPACE / "src" / "app" / "puremark" / \
+        "build" / "macos" / "Build" / "Products" / "Release"
+
     elif args.platform == "linux-release":
         print("Compiling for Linux Release...")
-        sharer_lib_out_dir = WORKSPACE / "src" / "app" / "puremark" / "build" / "linux" / "x64" / "release" / "bundle"
+        sharer_lib_out_dir = WORKSPACE / "src" / "app" / "puremark" / \
+        "build" / "linux" / "x64" / "release" / "bundle"
+
     elif args.platform == "android-release":
         print("Compiling for Android Release...")
+
     elif args.platform == "ios-release":
         print("Compiling for iOS Release...")
         raise NotImplementedError("iOS platform not supported yet.")
+
     elif args.platform == "web-release":
         print("Compiling for Web Release...")
         raise NotImplementedError("Web platform not supported yet.")
+
     else:
         raise NotImplementedError(f"Platform not supported: {args.platform}")
 
 
     # Criando os caminhos de forma segura
     cmake_file = WORKSPACE / "src" / "pmrender" / "CMakeLists.txt"
-    bindings_out_dir = WORKSPACE / "src" / "app" / "puremark" / "lib" / "autogen" / "bindings"
+    bindings_out_dir = WORKSPACE / "src" / "app" / "puremark" / \
+    "lib" / "autogen" / "bindings"
 
     # Compilar a biblioteca compartilhada
     try:
@@ -145,14 +165,20 @@ def main() -> None:
             raise Exception("Output shared library directory not specified.")
 
         shared_object = compile_using_cmake(cmake_file)
-        print(f"Build completed successfully. Shared library is located at:\n {shared_object}")
-        shared_object_new = copy_shared_object(shared_object, sharer_lib_out_dir)
+        print(f"Build completed successfully. Shared library is located at:\n"
+              f"{shared_object}")
 
+        shared_object_new = copy_shared_object(shared_object, sharer_lib_out_dir)
         # Gerar os bindings Dart
         c_file = Path(cmake_file).parent / "src" / "bindings.h"
         print(f"Generating Dart bindings for:\n {c_file}")
-        dart_file = c_parser.generate_dart_bindings(c_file, bindings_out_dir, sharer_lib_out_dir)
-        print(f"Bindings generated successfully. Dart file is located at:\n {dart_file}")
+        dart_file = c_parser.generate_dart_bindings(c_file,
+                                                    bindings_out_dir,
+                                                    sharer_lib_out_dir)
+
+        print(f"Bindings generated successfully. Dart file is located at:\n"
+              f"{dart_file}")
+
     except Exception as e:
         print(f"Erro: {e}")
 

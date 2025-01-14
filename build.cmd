@@ -1,12 +1,5 @@
 @echo off
 
-:: Verify flutter install
-flutter --version >nul 2>nul
-if %errorlevel% neq 0 (
-    echo Flutter não encontrado, instale o Flutter
-    exit /b 1
-)
-
 :: Verify python virtual enviroment
 if exist ".venv" (
     echo Ativando o ambiente virtual...

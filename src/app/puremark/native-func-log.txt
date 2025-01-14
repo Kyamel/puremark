@@ -1,0 +1,171 @@
+freeSomeStructure foi chamada to: {"x":5,"y":2}.
+freeSomeStructure foi chamada to: {"x":1,"y":2}.
+freeSomeStructure foi chamada to: {"x":1,"y":2}.
+freeSomeStructure foi chamada to: {"x":5,"y":2}.
+freeSomeStructure foi chamada to: {"x":1,"y":2}.
+freeSomeStructure foi chamada to: {"x":1,"y":2}.
+freeSomeStructure foi chamada to: {"x":1,"y":2}.
+freeSomeStructure foi chamada to: {"x":1,"y":2}.
+freeSomeStructure foi chamada to: {"x":1,"y":2}.
+freeSomeStructure foi chamada to: {"x":1,"y":2}.
+freeSomeStructure foi chamada to: {"x":1,"y":2}.
+freeSomeStructure foi chamada to: {"x":1,"y":2}.
+freeSomeStructure foi chamada to: {"x":1,"y":2}.
+freeSomeStructure foi chamada to: {"x":1,"y":2}.
+freeSomeStructure foi chamada to: {"x":1,"y":2}.
+freeSomeStructure foi chamada to: {"x":1,"y":2}.
+freeSomeStructure foi chamada to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":5,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":5,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":5,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":5,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":5,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.
+freeSomeStructure called to: {"x":1,"y":2}.

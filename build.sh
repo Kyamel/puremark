@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Verificar se o Flutter está instalado
 flutter --version || { echo "Flutter não encontrado, instale o Flutter"; exit 1; }

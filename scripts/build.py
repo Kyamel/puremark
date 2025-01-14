@@ -161,7 +161,7 @@ def main() -> None:
     # Compilar a biblioteca compartilhada
     try:
         if sharer_lib_out_dir == Path("none"):
-            raise Exception("Output shared library directory not specified.")
+            raise FileNotFoundError("Output shared library directory not specified.")
 
         shared_object = compile_using_cmake(cmake_file)
         print(f"Build completed successfully. Shared library is located at:\n"
@@ -178,7 +178,7 @@ def main() -> None:
         print(f"Bindings generated successfully. Dart file is located at:\n"
               f"{dart_file}")
 
-    except Exception as e:
+    except FileNotFoundError as e:
         print(f"Erro: {e}")
 
 if __name__ == "__main__":

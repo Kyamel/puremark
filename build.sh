@@ -17,10 +17,6 @@ fi
 echo "Executando o script Python para build..."
 python3 scripts/build.py linux
 
-# Desativar o ambiente virtual
-echo "Desativando o ambiente virtual..."
-deactivate
-
 # Navegar para o diretório do app Flutter
 echo "Navegando para o diretório do app Flutter..."
 cd ./src/app/puremark

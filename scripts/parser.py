@@ -30,7 +30,9 @@ def c_to_dart_ffi_type(c_type: str) -> str:
     return mapping.get(c_type, "Void")  # Valor padrão: Void
 
 
-def generate_dart_bindings(c_file: Path, bidings_out_dir: Path, shared_lib_out_dir: Path) -> Path:
+def generate_dart_bindings(c_file: Path,
+                           bidings_out_dir: Path,
+                           shared_lib_out_dir: Path) -> Path:
     """
     Generates bindings for functions defined in a C file.
 
@@ -54,7 +56,8 @@ def generate_dart_bindings(c_file: Path, bidings_out_dir: Path, shared_lib_out_d
 
         """
         dart.write(f"{header}\n")
-        dart.write("import 'dart:ffi';\nimport 'package:ffi/ffi.dart' as adv; // For Pointer and Dynamic memory allocation.\n")
+        dart.write("import 'dart:ffi';\nimport 'package:ffi/ffi.dart' as adv;"
+                   "// For Pointer and Dynamic memory allocation.\n")
         shared_lib_out_dir_posix = Path(shared_lib_out_dir).as_posix()
         shared_lib_out_dir_final = shared_lib_out_dir_posix.split("src/app/puremark/")[1]
         dart.write(f"final dylib = DynamicLibrary.open('{shared_lib_out_dir_final}/fmrender.dll');\n\n")

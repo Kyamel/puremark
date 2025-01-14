@@ -9,11 +9,14 @@ import parser as parser
 def check_cmake_installed() -> None:
     """Checks if CMake is installed on the system."""
     try:
-        subprocess.run(["cmake", "--version"], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.run(["cmake", "--version"],
+                       check=True, stdout=subprocess.PIPE,
+                       stderr=subprocess.PIPE)
     except subprocess.CalledProcessError:
         raise EnvironmentError("CMake is not installed or not found in the system path.")
 
-def compile_using_cmake(cmake_file: Path, flags="-DCMAKE_INSTALL_PREFIX=build/bin") -> Path:
+def compile_using_cmake(cmake_file: Path,
+                        flags="-DCMAKE_INSTALL_PREFIX=build/bin") -> Path:
     """
     Compiles a C project using CMake and generates a shared library.
 
@@ -56,7 +59,8 @@ def compile_using_cmake(cmake_file: Path, flags="-DCMAKE_INSTALL_PREFIX=build/bi
         raise NotImplementedError(f"Platform not supported: {system}")
     return Path(output_file)
 
-def copy_shared_object(shared_object: Path, sharer_lib_out_dir: Path) -> Path:
+def copy_shared_object(shared_object: Path,
+                       sharer_lib_out_dir: Path) -> Path:
     """
     Copies the shared object to the specified output directory.
 

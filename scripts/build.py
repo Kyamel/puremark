@@ -28,7 +28,6 @@ def compile_using_cmake(cmake_file: Path, flags="-DCMAKE_INSTALL_PREFIX=build/bi
 
     # Create the build directory if it doesn't exist
     build_dir = cmake_dir / "build"
-    os.makedirs(build_dir, exist_ok=True)
 
     # Build the CMake command to configure and build
     cmd_configure = ["cmake", "-S", str(cmake_dir), "-B", str(build_dir), flags]
@@ -64,8 +63,6 @@ def copy_shared_object(shared_object: Path, sharer_lib_out_dir: Path) -> Path:
     :param shared_object: Path to the shared object file to be copied.
     :param sharer_lib_out_dir: The directory where the shared object will be copied to.
     """
-    # Ensure the destination directory exists
-    os.makedirs(sharer_lib_out_dir, exist_ok=True)
 
     # Define the destination path (in this case, the same name, but with a specific extension)
     destination_path = os.path.join(sharer_lib_out_dir, shared_object.name)

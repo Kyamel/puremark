@@ -168,6 +168,7 @@ def main() -> None:
               f"{shared_object}")
 
         shared_object_new = copy_shared_object(shared_object, sharer_lib_out_dir)
+        print(f"Shared library copied to:\n {shared_object_new}")
         # Gerar os bindings Dart
         c_file = Path(cmake_file).parent / "src" / "bindings.h"
         print(f"Generating Dart bindings for:\n {c_file}")

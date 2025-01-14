@@ -1,4 +1,0 @@
-C:/Users/lucas/dev/crossplatform/puremark/src/pmrender/build/CMakeFiles/cmark-gfm.dir
-C:/Users/lucas/dev/crossplatform/puremark/src/pmrender/build/CMakeFiles/pmrender.dir
-C:/Users/lucas/dev/crossplatform/puremark/src/pmrender/build/CMakeFiles/edit_cache.dir
-C:/Users/lucas/dev/crossplatform/puremark/src/pmrender/build/CMakeFiles/rebuild_cache.dir

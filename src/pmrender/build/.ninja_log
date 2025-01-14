@@ -1,7 +1,0 @@
-# ninja log v6
-20	117	7585682654569361	CMakeFiles/pmrender.dir/src/native_functions.c.obj	1f1eef1a3c03ad04
-15	142	7585682654513992	CMakeFiles/cmark-gfm.dir/lib/cmark-gfm/src/cmark.c.obj	9f8dd2e2715bd573
-25	214	7585682654612899	CMakeFiles/pmrender.dir/src/parson.c.obj	31949a7c1e5908f0
-147	345	7585682655837197	cmark-gfm.lib	9450c386bb41c18f
-345	473	7585682658826143	pmrender.dll	753bf77ffc92aa68
-345	473	7585682658826143	pmrender.lib	753bf77ffc92aa68

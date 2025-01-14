@@ -8,9 +8,3 @@ backups/
 src/pmrender/lib/cmark-gfm/src/cmark-gfm_export.h
 src/pmrender/lib/cmark-gfm/src/cmark-gfm_version.h
 src/pmrender/lib/cmark-gfm/src/config.h
-
-# Dynamic libraries
-src/app/puremarklib/autogeb/native_libraries/**
-
-# Log
-src/app/puremark/native-func-log.txt

@@ -64,6 +64,9 @@ def copy_shared_object(shared_object: Path, sharer_lib_out_dir: Path) -> Path:
     :param sharer_lib_out_dir: The directory where the shared object will be copied to.
     """
 
+    # Ensure the directory path exists (create it if it doesn't exist)
+    os.makedirs(sharer_lib_out_dir, exist_ok=True)
+
     # Define the destination path (in this case, the same name, but with a specific extension)
     destination_path = os.path.join(sharer_lib_out_dir, shared_object.name)
 

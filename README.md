@@ -8,6 +8,7 @@ Have those tools instaled:
 - [Git](https://git-scm.com/)
 - [Flutter](https://flutter.dev/)
 - [Python](https://www.python.org/) (version 3.x)
+- [CMake](https://cmake.org/) (version 3.x)
 
 ## Install
 

@@ -73,7 +73,7 @@ if(EXISTS ${REPO_DIR})
             ERROR_VARIABLE error_output
         )
         if(NOT result EQUAL 0)
-            message(FATAL_ERROR "Error cloning md4ast: ${error_output}")
+            message(FATAL_ERROR "Error cloning cmark-gfm: ${error_output}")
         else()
             message(STATUS "Repository cloned successfully.\n")
         endif()
@@ -91,7 +91,7 @@ else()
         ERROR_VARIABLE error_output
     )
     if(NOT result EQUAL 0)
-        message(FATAL_ERROR "Error cloning md4ast: ${error_output}")
+        message(FATAL_ERROR "Error cloning cmark-gfm: ${error_output}")
     else()
         message(STATUS "Repository cloned successfully.\n")
     endif()
@@ -114,7 +114,7 @@ execute_process(
     ERROR_VARIABLE error_output
 )
 if(NOT result EQUAL 0)
-    message(FATAL_ERROR "Error configuring md4ast build with cmake clang: ${error_output}")
+    message(FATAL_ERROR "Error configuring cmark-gfm build with cmake clang: ${error_output}")
 else()
     message(STATUS "CMake configuration completed. CMakeFiles created in ${BUILD_DIR}.\n")
 endif()
@@ -123,7 +123,7 @@ endif()
 message(STATUS "Building cmark-gfm in ${BUILD_DIR}...")
 if(WIN32)
     # No Windows, usamos cmake --build
-    message(STATUS "Windows detected, building md4ast with cmake --build ${BUILD_DIR} ...")
+    message(STATUS "Windows detected, building cmark-gfm with cmake --build ${BUILD_DIR} ...")
     execute_process(
         COMMAND ${CMAKE_COMMAND} --build ${BUILD_DIR} --config Release
         RESULT_VARIABLE result
@@ -132,7 +132,7 @@ if(WIN32)
     )
 elseif(UNIX)
     # No Linux (ou Unix), usamos make
-    message(STATUS "Unix detected, building md4ast with make -C ${BUILD_DIR} ...")
+    message(STATUS "Unix detected, building cmark-gfm with make -C ${BUILD_DIR} ...")
     execute_process(
         COMMAND make -C ${BUILD_DIR}
         RESULT_VARIABLE result
@@ -163,12 +163,12 @@ include_directories(${PROJECT_SOURCE_DIR}/src)
 
 # Add the compilation for your project (shared library)
 message(STATUS "Including *.c from: ${PROJECT_SOURCE_DIR}/src")
-message(STATUS "Including md4c.c from: ${BUILD_DIR}/src\n")
+message(STATUS "Including cmark.c from: ${BUILD_DIR}/src\n")
 file(GLOB SOURCES ${PROJECT_SOURCE_DIR}/src/*.c)
 add_library(cmark-gfm STATIC ${REPO_DIR}/src/cmark.c)
 
-# Add the shared library (pmrender.dll) linked with the static md4ast library
-message(STATUS "Linking md4c static library with pmrender dynamic library...")
+# Add the shared library (pmrender.dll) linked with the static cmark-gfm library
+message(STATUS "Linking cmark-gfm static library with pmrender dynamic library...")
 add_library(pmrender SHARED ${SOURCES})
 
 # Set output directory for libraries and executables
@@ -184,7 +184,7 @@ elseif(UNIX)
     target_link_libraries(pmrender PRIVATE ${CMARK_LIBRARIES})
 endif()
 
-# Ensure md4ast is built before pmrender
+# Ensure cmark-gfm is built before pmrender
 add_dependencies(pmrender cmark-gfm)
 message(STATUS "Setting pmrender dynamic library install into ${CMAKE_BINARY_DIR}/bin...")
 

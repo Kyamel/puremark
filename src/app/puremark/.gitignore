@@ -46,3 +46,6 @@ app.*.map.json
 
 # Dynamic libraries
 lib/autogeb/native_libraries/*
+
+# Log
+native-func-log.txt

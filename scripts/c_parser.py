@@ -42,8 +42,8 @@ def generate_dart_bindings(c_file: Path,
     dart_file = Path(bidings_out_dir) / "bindings.dart"
     os.makedirs(bidings_out_dir, exist_ok=True)
 
-    with open(c_file, "r") as source, open(dart_file, "w") as dart:
-        base_name = Path(c_file).stem
+    with open(c_file, "r", encoding="utf-8") as source, open(dart_file, "w") as dart:
+        #base_name = Path(c_file).stem
 
         header = f"""
 // PureMark Copyright 2025. All rights reserved.
@@ -97,7 +97,7 @@ def generate_dart_bindings(c_file: Path,
                 dart.write(f"// Loads {func_name} function\n")
                 dart.write(f"final {func_name.capitalize()} {func_name} = dylib.lookupFunction"
                            f"<{func_name.capitalize()}Func, {func_name.capitalize()}>(\n")
-                
+
                 dart.write(f"  '{func_name}',\n")
                 dart.write(");\n\n")
 

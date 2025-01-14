@@ -4,7 +4,7 @@ import subprocess
 import platform
 import os
 from pathlib import Path
-import c_parser as c_parser
+import c_parser
 
 def check_cmake_installed() -> None:
     """Checks if CMake is installed on the system."""
@@ -12,8 +12,8 @@ def check_cmake_installed() -> None:
         subprocess.run(["cmake", "--version"],
                        check=True, stdout=subprocess.PIPE,
                        stderr=subprocess.PIPE)
-    except subprocess.CalledProcessError:
-        raise EnvironmentError("CMake is not installed or not found in the system path.")
+    except subprocess.CalledProcessError as e:
+        raise EnvironmentError("CMake is not installed or not found in the system path:", {e})
 
 def compile_using_cmake(cmake_file: Path,
                         flags="-DCMAKE_INSTALL_PREFIX=build/bin") -> Path:
@@ -97,7 +97,6 @@ def main() -> None:
     # Analisar os argumentos
     args = argparser.parse_args()
     sharer_lib_out_dir = Path('none')
-
     if args.platform == "windows":
         print("Compiling for Windows...")
         sharer_lib_out_dir = WORKSPACE / "src" / "app" / "puremark" / "lib" / \

@@ -3,6 +3,8 @@ import 'dart:ffi';
 
 import 'package:ffi/ffi.dart';
 import 'package:flutter/material.dart';
+import 'package:puremark/layout/edit_page.dart';
+import 'package:puremark/layout/terminal_page.dart';
 import 'autogen/bindings/add.dart' as bindings;
 
 void main() {
@@ -17,6 +19,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      initialRoute: '/',  // Tela inicial
+      routes: {
+        '/EditPage': (context) => EditPage(),
+        '/TerminalPage': (context) => TerminalPage(),
+      },
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -121,6 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
+
           // Column is also a layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
           // children horizontally, and tries to be as tall as its parent.
@@ -136,6 +144,26 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            TextButton(
+              onPressed: () {
+                // Navega para a segunda tela
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => EditPage()),
+                );
+              },
+              child: Text('Go to Render Page'),
+            ),
+            TextButton(
+              onPressed: () {
+                // Navega para a segunda tela
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => TerminalPage()),
+                );
+              },
+              child: Text('Go to Terminal Page'),
+            ),
             const Text(
               'You have pushed the button this many times:',
             ),
